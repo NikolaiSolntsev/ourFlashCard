@@ -10,6 +10,7 @@ class Communicator {
     );
     return number;
   }
+
   quiz(cards) {
     const question = cards.questions;
     for (let i = 0; i < question.length; i += 1) {
@@ -21,7 +22,7 @@ class Communicator {
         console.log(`Твой счёт:  ${cards.score} очков${EOL}`);
       } else {
         console.log(
-          `Неверно, 👎👎👎${EOL}А правильный ответ: ${cards.answers[i]}${EOL}${EOL}`
+          `Неверно, 👎👎👎${EOL}А правильный ответ: ${cards.answers[i]}${EOL}Твой счёт:  ${cards.score} очков${EOL}${EOL}`
         );
         cards.score -= 10;
       }
