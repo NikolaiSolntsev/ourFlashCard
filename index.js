@@ -24,6 +24,30 @@ async function rieadFile(num){
 return result 
 }
  
+async function getArrayQuestion () {
+
+    const x =await rieadFile(number)
+let array =[]; 
+for (let i=0; i<x.length; i+=1){
+   if (i%2===0){
+    array.push(x[i])
+} 
+}
+return array
+}
+
+async function getArrayAnswers () {
+    const x =await rieadFile(number)
+let array =[]; 
+for (let i=0; i<x.length; i+=1){
+   if (i%2===1){
+    array.push(x[i])
+} 
+}
+
+return array
+}
+
 
 
 //  module.exports = Cards
