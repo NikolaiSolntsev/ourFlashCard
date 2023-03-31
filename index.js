@@ -3,7 +3,6 @@ const path = require('path');
 const { EOL } = require('os');
 const readlineSync = require('readline-sync');
 
-
 class Cards {
   constructor(question, score = 0) {
     this.question = question;
